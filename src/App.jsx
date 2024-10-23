@@ -5,6 +5,7 @@ import './App.css'
 import Count from './Counter'
 import Counter from './Counter'
 import ProductCounter from './ProductCounter'
+import Team from './Team'
 
 function App() {
   function handleClick() {
@@ -20,8 +21,9 @@ function App() {
   return (
     <>
       <h3>React Core Concepts 2</h3>
-      {/* <Counter></Counter> */}
-      <ProductCounter></ProductCounter>
+      <Counter></Counter>
+      <Team></Team>
+      {/* <ProductCounter></ProductCounter> */}
       {/* <button onClick={handleClick}>Click Me</button>
       <button onClick={handleClick2}>Click2</button>
       <button onClick={() => { alert('Button 3 Clicked') }}>Click3</button>
