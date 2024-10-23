@@ -1,5 +1,6 @@
+import Friend from './Friend';
+import './Friends.css'
 import { useEffect, useState } from "react"
-
 export default function Friends() {
     const [friends, setFriends] = useState([]);
     useEffect(() => {
@@ -9,8 +10,12 @@ export default function Friends() {
             .catch(error => console.log(error))
     }, [])
     return (
-        <div>
+        <div className='box'>
             <h2>Friends: {friends.length}</h2>
+            {
+                friends.map(friend => <Friend
+                    friend={friend}></Friend>)
+            }
         </div>
     )
 }
